@@ -1,0 +1,19 @@
+<h2>Articulos disponibles</h2>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Tipo de flor</th>
+        <th>Cantidad disponible</th>
+        <th>Valor unidad (c/u)</th>
+        <th>Acciones</th>
+    </tr>
+    <tr *ngFor="let articulo of listaArticulos">
+        <td>{{articulo.id}}</td>
+        <td>{{articulo.tipoFlor}}</td>
+        <td>{{articulo.cantidadDisponible}}</td>
+        <td>{{articulo.valorUnidad}}</td>
+        <td>
+            <button class="btn info" (click)="comprar(articulo)">Comprar</button>
+        </td>
+    </tr>
+</table>

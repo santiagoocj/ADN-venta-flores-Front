@@ -1,0 +1,27 @@
+<form [formGroup]="articuloForm" (ngSubmit)="crear()">
+  <div class="container">
+    <h1>Registrar Articulo</h1>
+    <div class="container-v2">
+      <label for="tipo-flor">Tipo de flor:</label>
+      <input validar type="text" id="tipoFlor" name="tipoFlor" placeholder="Tipo de flor" class="form-control"
+            formControlName="tipoFlor">
+    </div>
+      
+    <div class="container-v2">
+      <label for="cantidad-disponible">Cantidad disponible:</label>
+      <input validar type="number" id="cantidadDisponible" name="cantidadDisponible" placeholder="Cantidad disponible" class="form-control"
+            formControlName="cantidadDisponible">
+    </div>
+      
+    <div class="container-v2">
+      <label for="valor-unidad">Valor unidad:</label>
+      <input validar type="number" id="valorUnidad" name="valorUnidad" placeholder="Valor por unidad del producto" class="form-control"
+            formControlName="valorUnidad">
+    </div>
+      
+
+    <button class="registerbtn" id="botonGuardar">Guardar</button>
+
+  </div>
+</form>
+  
