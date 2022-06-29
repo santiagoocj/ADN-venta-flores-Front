@@ -64,7 +64,7 @@
     "stryker-cli": "^1.0.2",
     "ts-node": "~ 10.8.0",
     "typescript": "~4.6.4",
-    "uuid": "^8.3.2",
+    "uuid": "^7.0.0",
     "webpack-bundle-analyzer": "^4.5.0",
     "yo": "^4.3.0"
   }
