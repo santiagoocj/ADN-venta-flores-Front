@@ -30,7 +30,9 @@ describe('CompraService', () => {
     const dummyArticulo: Articulo = {id: 1, tipoFlor: 'Rosas', cantidadDisponible: 20, valorUnidad: 2000, fechaCreacion: new Date};
     const dummyCompra: Compra = {id: 1, articulo: 'Rosas', cantidad: 20, valorUnidad: 2000, valorTotal: 40000, fechaCompra: new Date}
     service.comprar(dummyArticulo).subscribe((respuesta) => {
-        expect(respuesta).toEqual(dummyCompra);
+        expect(respuesta.id).toEqual(dummyCompra.id);
+        expect(respuesta.articulo).toEqual(dummyCompra.articulo);
+        expect(respuesta.cantidad).toEqual(dummyCompra.cantidad);
     });
     const req = httpMock.expectOne(apiEndPointCompra + '/1');
     expect(req.request.method).toBe('POST');
