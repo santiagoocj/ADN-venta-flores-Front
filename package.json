@@ -46,7 +46,7 @@
     "@types/node": "^17.0.38",
     "@typescript-eslint/eslint-plugin": "5.27.0",
     "@typescript-eslint/parser": "5.27.0",
-    "ajv": "^6.12.6",
+    "ajv": "^8.8.2",
     "eslint": "^8.16.0",
     "eslint-plugin-rule-angular-arquitecture": "file:./rules/eslint/",
     "jasmine-core": "~4.1.1",
